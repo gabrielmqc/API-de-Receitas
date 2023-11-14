@@ -4,6 +4,11 @@
 API de Receitas
 Esta API permite gerenciar receitas e usuários. Abaixo estão os endpoints disponíveis e como usá-los.
 
+Passo a Passo para Utilizar
+Primeiro inicia o spring na Pasta API de Receitas pela classe "ReceitasApplication", isso ira subir nossa aplicação Spring e deixar o banco de dados funcional.
+Após isso deve subir pelo live server o arquivo "index.html", que ira te direcionar para uma pagina onde sera solicitado seu nome, apos completar o campo sera redirecionado para a pagina de receitas.
+Onde devera completar todos os campos para se adicionar uma receita, após a adicionar pelo menos 1 receita será possivel utilizar das funções do CRUD para pesquisa-la e exclui-la
+
 Receitas
 1. Listar Todas as Receitas
 Endpoint: GET /recipe
