@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bem-vindo</h1>
+        <form action="" id="form_recipe">
+            <label for="nome">Nome da Receita</label>
+            <input type="text" name="nome" id="nome" required>
+
+            <label for="ingrediente">Ingrediente</label>
+            <input type="text" name="ingrediente" id="ingrediente" required>
+
+            <label for="modoDePreparo">Modo de Preparo</label>
+            <input type="text" name="modoDePreparo" id="modoDePreparo" required>
+            
+            <label for="porcoes">Porções</label>
+            <input type="text" name="porcoes" id="porcoes" required>
+            
+            <label for="tipo">Tipo</label>
+            <select name="tipo" id="tipo" required>
+                <option value="doce">Doce</option>
+                <option value="salgado">Salgado</option>
+                <option value="bebida">Bebida</option>
+            </select>
+            
+            <button type="submit">Registrar</button>
+        </form>
+
+        <!-- Botões para operações CRUD -->
+        <div>
+            <h2>Operações CRUD</h2>
+            <!-- Botão para pesquisar todas as receitas -->
+            <button id="btnPesquisarTodas">Pesquisar Todas as Receitas</button>
+            <div id="listaReceitas"></div>
+            
+            <!-- Formulário para pesquisar receita por ID -->
+            <form action="" id="form_pesquisarPorId"><br>
+                <label for="idPesquisa">ID da Receita:</label>
+                <input type="text" name="idPesquisa" id="idPesquisa" required>
+                <button type="submit">Pesquisar por ID</button>
+            </form>
+            
+            <!-- Formulário para deletar receita por ID -->
+            <form action="" id="form_deletarPorId"><br>
+                <label for="idDeletar">ID da Receita a Deletar:</label>
+                <input type="text" name="idDeletar" id="idDeletar" required>
+                <button type="submit">Deletar por ID</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
