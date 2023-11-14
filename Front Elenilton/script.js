@@ -25,5 +25,5 @@ formulario.addEventListener('submit', function (event){
     
     cadastrarUser();
     clean();
-    window.location.href = "/Recipe/index.html";
+    window.location.href = "./recipe.html";
 });
